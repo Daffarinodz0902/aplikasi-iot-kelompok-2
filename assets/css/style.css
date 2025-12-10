@@ -1,0 +1,33 @@
+:root{
+  --bg1:#0f172a;
+  --bg2:#0b3a66;
+  --glass: rgba(255,255,255,0.06);
+  --card: #ffffff;
+}
+body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background: linear-gradient(135deg,var(--bg1),var(--bg2)); min-height:100vh;}
+.nav-gradient{background: linear-gradient(90deg, rgba(12,54,84,0.95), rgba(3,37,65,0.95));}
+.hero{background: linear-gradient(180deg, rgba(255,255,255,0.04), transparent);}
+
+.sensor-card{background: rgba(255,255,255,0.06); color: #fff; border: 1px solid rgba(255,255,255,0.04);}
+.sensor-card .card-title{color: rgba(255,255,255,0.9);}
+.card{border-radius:12px;}
+
+/* make canvas background subtle */
+#chartSuhu{background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent); border-radius:8px; padding:8px;}
+
+/* small screens spacing */
+@media (max-width:576px){
+  .display-6{font-size:1.6rem}
+}
+
+/* repo card */
+#repoCard{color:#fff}
+
+/* subtle glow */
+.shadow-sm{box-shadow: 0 6px 18px rgba(2,6,23,0.5)!important}
+
+/* buttons */
+.btn-outline-primary{color:#cfe9ff;border-color:rgba(255,255,255,0.06)}
+
+/* small helpers */
+.text-muted{opacity:0.85}
