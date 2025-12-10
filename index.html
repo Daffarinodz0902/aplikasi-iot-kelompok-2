@@ -12,9 +12,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
     <!-- Custom style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -40,7 +37,7 @@
 
     <header class="hero py-5 text-center text-white">
         <div class="container">
-            <h1 class="display-6 fw-bold">Aplikasi Modul IOT Kelompok 2 IOT</h1>
+            <h1 class="display-6 fw-bold">Aplikasi Modul IOT Kelas C</h1>
             <p class="lead mb-0">Dashboard interaktif untuk memantau sensor dan mengendalikan aktuator</p>
         </div>
     </header>
@@ -102,10 +99,12 @@
             </div>
 
             <div class="col-12 col-lg-8">
-                <div class="card shadow-sm">
+                    <div class="card shadow-sm">
                     <div class="card-body">
-                        <h6 class="card-title mb-3">Grafik Suhu (30 titik terakhir)</h6>
-                        <canvas id="chartSuhu" height="120"></canvas>
+                        <h6 class="card-title mb-3">Riwayat Suhu (30 terakhir) — grafik dinonaktifkan</h6>
+                        <ul id="recentList" class="list-group list-group-flush small">
+                            <!-- isi oleh app.js -->
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -168,4 +167,3 @@
     <script src="assets/js/app.js"></script>
 </body>
 </html>
-
